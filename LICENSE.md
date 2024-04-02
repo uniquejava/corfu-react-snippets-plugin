@@ -2,7 +2,7 @@ MIT License
 -----------
 Copyright (c) 2024 SongBai Yin (https://github.com/uniquejava/corfu-react-snippets-plugin)
 
-Copyright (c) 2023 Anurag Kanwar (https://github.com/anuragkanwar/corfu-react-snippets-plugin)
+Copyright (c) 2023 Anurag Kanwar (https://github.com/anuragkanwar/modern-react-snippets-plugin)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

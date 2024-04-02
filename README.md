@@ -50,6 +50,16 @@ Execution failed for task ':patchPluginXml'.
 
 `build/distributions/Corfu React Snippets-0.0.2.zip`
 
+TypeScript模版文件另见: https://github.com/jinsihou19/ReactSnippets/blob/master/resources/liveTemplates/React.xml
+
+注意 name 的拼写!
+
+```xml
+<context>
+    <option name="TypeScript" value="true"/>
+</context>
+```
+
 ## 以下内容是固定格式
 
 <!-- Plugin description -->
