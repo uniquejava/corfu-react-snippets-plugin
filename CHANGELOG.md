@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# Modern React Snippets Changelog
+# Corfu React Snippets Changelog
 
 ## [Unreleased]
 ### Added

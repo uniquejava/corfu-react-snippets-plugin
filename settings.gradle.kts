@@ -1,1 +1,1 @@
-rootProject.name = "modern-react-snippets-plugin"
+rootProject.name = "corfu-react-snippets-plugin"

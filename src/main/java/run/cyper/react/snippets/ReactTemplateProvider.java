@@ -1,4 +1,4 @@
-package com.anurag.react.snippets;
+package run.cyper.react.snippets;
 
 import com.intellij.codeInsight.template.TemplateActionContext;
 import com.intellij.codeInsight.template.TemplateContextType;
@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class ReactTemplateProvider extends TemplateContextType {
     protected ReactTemplateProvider() {
-        super("MODERN REACT", "Modern React");
+        super("CORFU REACT", "Corfu React");
     }
 
     @Override

@@ -1,12 +1,12 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.anuragkanwar.modernreactsnippetsplugin</id>
-    <name>Modern React Snippets</name>
-    <vendor>Anurag Kanwar</vendor>
+    <id>com.github.uniquejava.modernreactsnippetsplugin</id>
+    <name>Corfu React Snippets</name>
+    <vendor>SongBai Yin</vendor>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <defaultLiveTemplates file="reactTemplates/modernReact.xml"/>
-        <liveTemplateContext implementation="com.anurag.react.snippets.ReactTemplateProvider"/>
+        <liveTemplateContext implementation="run.cyper.react.snippets.ReactTemplateProvider"/>
     </extensions>
 </idea-plugin>
