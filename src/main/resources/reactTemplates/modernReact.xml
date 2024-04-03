@@ -120,8 +120,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrpc"
@@ -130,8 +130,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrnfs"
@@ -141,8 +141,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrnf"
@@ -151,8 +151,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrfce"
@@ -161,8 +161,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrfc"
@@ -171,8 +171,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrcredux"
@@ -181,8 +181,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrce"
@@ -191,8 +191,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrcc"
@@ -201,8 +201,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrafce"
@@ -211,8 +211,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tsrafc"
@@ -221,8 +221,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="tpf" value="typeof $a$&#10;" description="typeofSnippet" toReformat="true" toShortenFQNames="true">
@@ -320,33 +320,33 @@
         </context>
     </template>
     <template name="srtest"
-              value="import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import { $a$ } from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;     &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
+              value="import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import { $a$ } from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;     &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
               description="setupReactComponentTestWithRedux" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="sntest"
-              value="import 'react-native'&#10;import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&lt;$a$ {...defaultProps} /&gt;)&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
+              value="import 'react-native'&#10;import renderer from 'react-test-renderer'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&lt;$a$ {...defaultProps} /&gt;)&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
               description="setupReactNativeTest" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="snrtest"
-              value="import 'react-native'&#10;import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;      &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
+              value="import 'react-native'&#10;import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;      &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;"
               description="setupReactNativeTestWithRedux" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="scu" value="shouldComponentUpdate(nextProps, nextState) { $a$ }&#10;"
@@ -364,8 +364,8 @@
                   alwaysStopAt="true"/>
         <variable name="b" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rxselect"
@@ -405,33 +405,33 @@
         </context>
     </template>
     <template name="rpcp"
-              value="import PropTypes from 'prop-types'&#10;import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  static propTypes = {}&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;"
+              value="import PropTypes from 'prop-types'&#10;import { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  static propTypes = {}&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;"
               description="reactClassPureComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rpce"
-              value="import React, { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
+              value="import { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
               description="reactClassExportPureComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rpc"
-              value="import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;"
+              value="import { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;"
               description="reactClassPureComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnstyle" value="const styles = StyleSheet.create({$a$})&#10;" description="reactNativeStyles"
@@ -443,165 +443,165 @@
         </context>
     </template>
     <template name="rnpce"
-              value="import { Text, View } from 'react-native'&#10;import React, { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
+              value="import { Text, View } from 'react-native'&#10;import { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
               description="reactNativePureComponentExport" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnpc"
-              value="import { Text, View } from 'react-native'&#10;import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;"
+              value="import { Text, View } from 'react-native'&#10;import { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;"
               description="reactNativePureComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnfs"
-              value="import { StyleSheet, Text, View } from 'react-native'&#10;import React from 'react'&#10;export default function $a$() {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;const styles = StyleSheet.create({})&#10;"
+              value="import { StyleSheet, Text, View } from 'react-native'&#10;export default function $a$() {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;const styles = StyleSheet.create({})&#10;"
               description="reactNativeFunctionalComponentWithStyles" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnfes"
-              value="import { StyleSheet, Text, View } from 'react-native'&#10;import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;const styles = StyleSheet.create({})&#10;"
+              value="import { StyleSheet, Text, View } from 'react-native'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;const styles = StyleSheet.create({})&#10;"
               description="reactNativeFunctionalExportComponentWithStyles" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnfe"
-              value="import { View, Text } from 'react-native'&#10;import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
+              value="import { View, Text } from 'react-native'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
               description="reactNativeFunctionalExportComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnf"
-              value="import { View, Text } from 'react-native'&#10;import React from 'react'&#10;export default function $a$ () {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;"
+              value="import { View, Text } from 'react-native'&#10;export default function $a$ () {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;"
               description="reactNativeFunctionalComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rncs"
-              value="import { Text, StyleSheet, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;const styles = StyleSheet.create({})&#10;"
+              value="import { Text, StyleSheet, View } from 'react-native'&#10;import { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;const styles = StyleSheet.create({})&#10;"
               description="reactNativeComponentWithStyles" toReformat="false" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnce"
-              value="import { Text, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
+              value="import { Text, View } from 'react-native'&#10;import { Component } from 'react'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;"
               description="reactNativeComponentExport" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rnc"
-              value="import { Text, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;"
+              value="import { Text, View } from 'react-native'&#10;import { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;"
               description="reactNativeComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rmcp"
-              value="import PropTypes from 'prop-types'&#10;import React, { memo } from 'react'&#10;const $a$ = memo((props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
+              value="import PropTypes from 'prop-types'&#10;import { memo } from 'react'&#10;const $a$ = memo((props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
               description="reactFunctionMemoComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rmc"
-              value="import React, { memo } from 'react'&#10;const $a$ = memo(() =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;export default $a$&#10;"
+              value="import { memo } from 'react'&#10;const $a$ = memo(() =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;export default $a$&#10;"
               description="reactFunctionMemoComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rfcreduxp"
-              value="import PropTypes from 'prop-types'&#10;import React from 'react'&#10;import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {&#10;  $b$: PropTypes.$c$&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
+              value="import PropTypes from 'prop-types'&#10;import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {&#10;  $b$: PropTypes.$c$&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
               description="reactFunctionalComponentReduxPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <variable name="b" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="c" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rfcredux"
-              value="import React from 'react'&#10;import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
+              value="import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
               description="reactFunctionalComponentRedux" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rfcp"
-              value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;function $a$ (props) {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
+              value="import PropTypes from 'prop-types'&#10;function $a$ (props) {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
               description="reactFunctionalComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rfce"
-              value="import React from 'react'&#10;function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
+              value="function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
               description="reactFunctionalExportComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rfc"
-              value="import React from 'react'&#10;export default function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;"
+              value="export default function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;"
               description="reactFunctionalComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="reduxmap" value="const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;"
@@ -619,25 +619,25 @@
         </context>
     </template>
     <template name="rcreduxp"
-              value="import PropTypes from 'prop-types'&#10;import React, { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  static propTypes = {&#10;    $b$: $c$&#10;  }&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
+              value="import PropTypes from 'prop-types'&#10;import { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  static propTypes = {&#10;    $b$: $c$&#10;  }&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
               description="reactClassComponentReduxPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <variable name="b" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="c" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rcredux"
-              value="import React, { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
+              value="import { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;"
               description="reactClassComponentRedux" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rcontext" value="const $a$ = React.createContext()&#10;" description="createContext"
@@ -663,8 +663,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rce"
@@ -673,8 +673,8 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rccp"
@@ -685,8 +685,8 @@
         <variable name="b" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="c" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rcc"
@@ -695,38 +695,38 @@
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rafcp"
-              value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;const $a$ = props =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
+              value="import PropTypes from 'prop-types'&#10;const $a$ = props =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;"
               description="reactArrowFunctionComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rafce"
-              value="import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
+              value="const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;"
               description="reactArrowFunctionExportComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="rafc"
-              value="import React from 'react'&#10;export const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;"
+              value="export const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;"
               description="reactArrowFunctionComponent" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue=""
                   alwaysStopAt="true"/>
         <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
     <template name="ptsr" value="PropTypes.string.isRequired&#10;" description="propTypeStringRequired"
@@ -1080,13 +1080,6 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
-    <template name="imr" value="import React from 'react'&#10;" description="importReact" toReformat="true"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_SCRIPT" value="true"/>
-            <option name="TypeScript" value="true"/>
-        </context>
-    </template>
     <template name="impt" value="import PropTypes from 'prop-types'&#10;" description="importPropTypes"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -1175,7 +1168,7 @@
         </context>
     </template>
     <template name="hocredux"
-              value="import React from 'react'&#10;import { connect } from 'react-redux'&#10;import PropTypes from 'prop-types'&#10;export const mapStateToProps = state =&gt; ({})&#10;export const mapDispatchToProps = {}&#10;export const $a$ = (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;export default WrapperComponent =&gt; connect(mapStateToProps, mapDispatchToProps)($a$(WrapperComponent))&#10;"
+              value="import { connect } from 'react-redux'&#10;import PropTypes from 'prop-types'&#10;export const mapStateToProps = state =&gt; ({})&#10;export const mapDispatchToProps = {}&#10;export const $a$ = (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;export default WrapperComponent =&gt; connect(mapStateToProps, mapDispatchToProps)($a$(WrapperComponent))&#10;"
               description="hocComponentWithRedux" toReformat="true" toShortenFQNames="true">
         <variable name="a" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
@@ -1184,7 +1177,7 @@
         </context>
     </template>
     <template name="hoc"
-              value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;export default (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;"
+              value="import PropTypes from 'prop-types'&#10;export default (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;"
               description="hocComponent" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true"/>
